@@ -1,0 +1,19 @@
+table,tr,td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th {
+    min-width: 200px;
+}
+div{
+    height: 70px;
+    width: 250px;
+    background-color: cadetblue;
+    color: white;
+    text-align: center
+}
+span{
+    background-color: rosybrown;
+    color: white;
+    text-align: center
+}

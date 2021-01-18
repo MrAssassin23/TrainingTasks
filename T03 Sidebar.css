@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.left{
+    background-color: grey;
+    text-align: center;
+    position: fixed;
+    width: 24%;
+    height: 100em;
+    padding-top: 20em;
+}
+.right{
+    
+    width: 76%;
+    position: absolute;
+    right: 0;
+    height: 200px;
+    padding : 20px;
+}
+.top{
+    height:230px;
+    width: 100%;
+    background-color: grey;
+}
+.row{
+    width: 100%;
+    padding:10px;    
+}
+.box{
+    height:200px;
+    width: 30%;
+    background-color: grey;
+    display: inline-block;
+    margin:10px;  
+}

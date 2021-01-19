@@ -12,12 +12,9 @@ body{
     height: 100em;
     padding-top: 20em;
 }
-.right{
-    
+.right{   
     width: 76%;
-    position: absolute;
-    right: 0;
-    height: 200px;
+    float : right;
     padding : 20px;
 }
 .top{

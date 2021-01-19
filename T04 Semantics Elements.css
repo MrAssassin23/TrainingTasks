@@ -16,7 +16,7 @@ nav {
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 15px;
-    flex:0.2;
+    flex:0.1;
 }
 nav li{
     list-style-type: none;
@@ -76,7 +76,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex:0.2;
+    flex:0.1;
 }
 .abc{
     flex:1;

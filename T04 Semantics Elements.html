@@ -9,39 +9,43 @@
 </head>
 
 <body>
-    <nav>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </nav>
+    <div class="main">
+        <nav>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </nav>
 
-    <div class="container">
-        <section>
-            <header></header>
-            <div class="container">
-                <aside></aside>
-                <div class="subsec">
-                    <div class="box"></div>
-                    <div class="container" >
-                        <div class="box2" style="margin-left: 0;"></div>
-                        <div class="box2" style="margin-right: 0;"></div>
+        <div class="container" style="flex: 0.6;">
+            <section>
+                <header></header>
+                <div class="container" style="flex: 0.6; ">
+                    <aside></aside>
+                    <div class="subsec">
+                        <div class="box" style="flex: 0.5;"></div>
+                        <div class="container" style="flex: 0.5; ">
+                            <div class="box2" style="margin-left: 0;"></div>
+                            <div class="box2" style="margin-right: 0;"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <article>
-            <header></header>
-            <div class="container" >
-                <div class="box2" style="margin-left: 0; margin-bottom: 15px;"></div>
-                <div class="box2" style="margin-right: 0; margin-bottom: 15px;"></div>
-            </div>
-            <div class="box" style="margin-top: 15px; margin-bottom: 15px;"></div>
-        </article>
-    </div>
+            </section>
+            <article>
+                <header></header>
+                <div class="subsec" style="margin: 0; ">
+                    <div class="container" style="flex: 0.5;">
+                        <div class="box2" style="margin-left: 0; margin-bottom: 15px;"></div>
+                        <div class="box2" style="margin-right: 0; margin-bottom: 15px;"></div>
+                    </div>
+                    <div class="box" style="margin-top: 15px; margin-bottom: 15px; flex: 0.5;"></div>
+                </div>
+            </article>
+        </div>
 
-    <footer >
-        <h3>This is a footer</h3>
-    </footer>
+        <footer>
+            <h3>This is a footer</h3>
+        </footer>
+    </div>
 </body>
 
 </html>

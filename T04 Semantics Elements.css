@@ -4,6 +4,11 @@
 body{
     margin: 0;
 }
+div.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 nav {
     height: 70px;
     background-color: grey;
@@ -11,6 +16,7 @@ nav {
     flex-direction: row-reverse;
     align-items: center;
     margin-bottom: 15px;
+    flex:0.2;
 }
 nav li{
     list-style-type: none;
@@ -19,9 +25,12 @@ nav li{
 div.container{
     display: flex;
     margin-bottom:0;
+    flex:1;
 }
 section, article {
     margin:  15px 0px;
+    display: flex;
+    flex-direction: column;
 }
 section{
     margin-right: 15px;
@@ -36,6 +45,7 @@ header{
     width: 100%;
     background-color: grey;
     margin-bottom: 15px;
+    flex: 0.4;
 }
 aside{
     flex: 0.4;
@@ -45,6 +55,8 @@ aside{
 div.subsec {
     flex: 0.6;   
     margin: 15px 0px 15px 15px;
+    display: flex;
+    flex-direction: column;
 }
 div.box{
     margin-bottom:15px;
@@ -53,7 +65,7 @@ div.box{
 }
 div.box2{
     flex:0.5;
-    height: 100px;
+
     margin: 15px;
     margin-bottom:0;
     background-color: grey;
@@ -64,4 +76,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex:0.2;
+}
+.abc{
+    flex:1;
+    margin: 10px;
+    background-color: rgb(7, 207, 7);
 }

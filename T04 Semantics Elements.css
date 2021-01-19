@@ -1,85 +1,88 @@
-*{
-    box-sizing: border-box;
+/** @format */
+
+* {
+	box-sizing: border-box;
 }
-body{
-    margin: 0;
+body {
+	margin: 0;
 }
-div.main{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+div.main {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 nav {
-    height: 70px;
-    background-color: grey;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin-bottom: 15px;
-    flex:0.1;
+	height: 70px;
+	background-color: grey;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-bottom: 15px;
+	/* flex:0.1; No need for this as Static height is already given */
 }
-nav li{
-    list-style-type: none;
-    width: 60px;
+nav li {
+	list-style-type: none;
+	width: 60px;
 }
-div.container{
-    display: flex;
-    margin-bottom:0;
-    flex:1;
+div.container {
+	display: flex;
+	margin-bottom: 0;
+	flex: 1;
 }
-section, article {
-    margin:  15px 0px;
-    display: flex;
-    flex-direction: column;
+section,
+article {
+	margin: 15px 0px;
+	display: flex;
+	flex-direction: column;
 }
-section{
-    margin-right: 15px;
-    flex: 1.6;
+section {
+	margin-right: 15px;
+	flex: 1.6;
 }
-article{
-    margin-left: 15px;
-    flex: 1.4;
+article {
+	margin-left: 15px;
+	flex: 1.4;
 }
-header{
-    height: 200px;
-    width: 100%;
-    background-color: grey;
-    margin-bottom: 15px;
-    flex: 0.4;
+header {
+	height: 200px;
+	width: 100%;
+	background-color: grey;
+	margin-bottom: 15px;
+	flex: 0.4;
 }
-aside{
-    flex: 0.4;
-    background-color: grey;
-    margin: 15px 15px 15px 0px;
+aside {
+	flex: 0.4;
+	background-color: grey;
+	margin: 15px 15px 15px 0px;
 }
 div.subsec {
-    flex: 0.6;   
-    margin: 15px 0px 15px 15px;
-    display: flex;
-    flex-direction: column;
+	flex: 0.6;
+	margin: 15px 0px 15px 15px;
+	display: flex;
+	flex-direction: column;
 }
-div.box{
-    margin-bottom:15px;
-    background-color: grey;
-    height: 100px;
+div.box {
+	margin-bottom: 15px;
+	background-color: grey;
+	height: 100px;
 }
-div.box2{
-    flex:0.5;
+div.box2 {
+	flex: 0.5;
 
-    margin: 15px;
-    margin-bottom:0;
-    background-color: grey;
+	margin: 15px;
+	margin-bottom: 0;
+	background-color: grey;
 }
-footer{
-    height: 70px;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex:0.1;
+footer {
+	height: 70px;
+	background-color: grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* flex:0.1; No need for this as Static height is already given */
 }
-.abc{
-    flex:1;
-    margin: 10px;
-    background-color: rgb(7, 207, 7);
+.abc {
+	flex: 1;
+	margin: 10px;
+	background-color: rgb(7, 207, 7);
 }

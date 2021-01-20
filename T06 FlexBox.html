@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="T06 FlexBox.css">
+</head>
+
+<body>
+    <h2>Flex Direction And Justify-Content(Justify conetent in main axis) </h2>
+    <div class="main-container">
+        <div class="container" style="flex-direction: row; justify-content: flex-end;">
+            <div class="box">Container Flex-Direction= flex-direction: row </div>
+            <div class="box" >Justify-Content = flex-end</div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="container" style="flex-direction: row-reverse; justify-content: center;">
+            <div class="box">Container Flex-Direction= row-reverse</div>
+            <div class="box" >Justify-Content = center </div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="container" style="flex-direction: row; justify-content: space-evenly;">
+            <div class="box">Container Flex-Direction= flex-direction: row </div>
+            <div class="box" >Justify-Content = flex-end</div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="container" style="flex-direction: column;  justify-content: space-between ;">
+            <div class="box">Container Flex-Direction= column</div>
+            <div class="box" >Justify-Content = space-between</div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="container" style="flex-direction: column-reverse; justify-content: space-around;">
+            <div class="box">Container Flex-Direction= column-reverse</div>
+            <div class="box" >Justify-Content = space-around</div>
+            <div class="box">Box 3</div>
+        </div>
+    </div>
+
+    <h2>Flex Direction Row And Align-Content & Align-Items(Justify conetent in cross axis) </h2>
+    <div class="main-container2" >
+        <div class="container2" style="align-items: flex-start;">
+            <div class="box">Box1</div>
+            <div class="box" >AlignItems = flex-start</div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="container2" style="align-items: flex-end ;">
+            <div class="box">Box1</div>
+            <div class="box" >AlignItems = flex-end</div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="container2" style="align-items: center;">
+            <div class="box">Box1</div>
+            <div class="box" >AlignItems = center</div>
+            <div class="box">Box 3</div>
+        </div>
+        <div class="container2" style="align-items: baseline; ">
+            <div class="box" style="height: 100px;"> <h1> Box1</h1></div>
+            <div class="box" style="height: 60px;" >AlignItems = baseline</div>
+            <div class="box" style="height: 120px;" > <h5> Box 3 </h5></div>
+        </div>
+        <div class="container2" style="align-items :  stretch;">
+            <div class="box2">Box1</div>
+            <div class="box2" >AlignItems = stretch Streach only if no height given</div>
+            <div class="box2">Box 3</div>
+        </div>
+    </div>
+
+    <h2>Flex Item Properties </h2>
+    <div class="main-container" >
+        <div class="container3" >
+            <div class="box" style="align-self : flex-start">align-self : flex-start</div>
+            <div class="box"  style="align-self : flex-end">align-self : flex-end</div>
+            <div class="box" style="align-self : center">align-self : center</div>
+            <div class="box2" id="box4" style="align-self : stretch">align-self : stretch</div>
+            <div class="box" id="box5" style="align-self : baseline">align-self : baseline</div>
+        </div>
+    </div>
+    <div class="flex-container" >
+        <div class="box" style="flex-grow: 2; width: 200px;">flex-grow: 2</div>
+        <div class="box" style="width: 200px;">Box 2</div>
+        <div class="box" style="flex-grow: 3; width: 200px;">flex-grow: 3</div>
+    </div>
+    <div class="flex-container" >
+        <div class="box" style="flex-shrink: 2; width: 300px;">flex-shrink: 2</div>
+        <div class="box" style="width: 300px;">Box2</div>
+        <div class="box" style="flex-shrink: 3; width: 300px;">flex-shrink: 3</div>
+    </div>
+    <div class="flex-container" >
+        <div class="box" style="flex-grow: 2; width: 200px; flex-basis: 0px;">flex-grow: 2 with flex-basis 0</div>
+        <div class="box" style="width: 200px;">Box2</div>
+        <div class="box" style="flex-grow: 3; width: 200px; flex-basis: 0px">flex-grow: 3 with flex-basis 0</div>
+    </div>
+</body>
+
+</html>

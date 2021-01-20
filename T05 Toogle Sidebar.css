@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+aside{
+    width: 25%;
+    height: 100%;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+Img{
+    width: 70%;
+    background-color: white;
+    border-radius: 50%;
+    margin: 30px auto;
+}
+h1.title{
+    font-size: 32px;
+    padding: 15px 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+ol{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+}
+ol li{
+    margin: 10px 0;
+}
+
+#toogle,label{
+    display: none;
+}
+
+@media only screen and ( max-width: 450px ){
+    label{
+        display: block;
+        line-height: 70px;
+        font-size: 32px;
+        background-color: grey;
+    }
+    aside{
+        display: none;
+    }
+    #toogle:checked + aside {
+        display: flex;
+        width: 90%;
+    }
+}

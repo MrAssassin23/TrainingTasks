@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-size: 20px;
+}
+form{
+    width:550px;
+    margin: 20px auto ;
+    padding: 20px;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+label{
+    position: relative;
+    display: block;
+    margin: 20px 0px 10px 0px;
+}
+label::after{
+    content: '*';
+    background-color: green;
+}
+label:hover::before{
+    content : attr(id);
+    position: absolute;
+    top: 100%;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 5px;
+}
+input{
+    padding: 5px 20px;
+    width: 100%;
+    background-color: mediumaquamarine;
+    border: 1px solid grey;
+    border-radius: 8px;
+    font-size: 20px;
+}
+input#fname::placeholder{
+    color: red;
+}
+input#lname:placeholder-shown{
+    background-color: red;
+}
+input#num:focus{
+    background-color: green;
+}
+input#mail:invalid{
+    background-color: red;
+    border: 2px solid red;
+}

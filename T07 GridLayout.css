@@ -19,6 +19,7 @@
 }
 .grid-item{
     background-color: darkorchid;
+    padding: 10px;
 }
 #item1{
     grid-area: item1;
@@ -45,14 +46,10 @@
     align-self: center;
     justify-self: center;
 }
-#item8{
-    
-}
 #item9{
     grid-column-start: 3;
     grid-column-end: 5;
 }
-#item10{}
 #item11{
     order: 3;
 }

@@ -37,7 +37,7 @@ div.circle{
     height: 20px;
     width: 20px;
     margin: 0px 3px;
-    background-color: grey;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -71,6 +71,15 @@ div.slides a{
     text-decoration: none;
     color: white;
 }
+div.controls{
+    display: none;
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
 .prev ,.next{
     position: absolute;
     height: 100%;
@@ -80,6 +89,7 @@ div.slides a{
     text-align: center;
     padding: 90px 0px;
     top: 0;
+    bottom: 0;
     transition-property: none;
     /* transition: all 0.8s cubic-bezier(0.79, 0.35, 0.24, 0.6) 2s; */
 }
@@ -92,30 +102,45 @@ div.slides a{
 #slide1:checked ~ div.slider{
     transform: translateX(0%);
 }
+#slide1:checked ~ div#control1{
+    display: block;
+}
 #slide1:checked ~ div.indicators label[for="slide1"] div.circle{
-    background-color: limegreen;
+    background-color: rgba(255, 255, 255, 1);
 }
 #slide2:checked ~ div.slider{
     transform: translateX(-20%);
 }
+#slide2:checked ~ div#control2{
+    display: block;
+}
 #slide2:checked ~ div.indicators label[for="slide2"] div.circle{
-    background-color: limegreen;
+    background-color: rgba(255, 255, 255, 1);
 }
 #slide3:checked ~ div.slider{
     transform: translateX(-40%);
 }
+#slide3:checked ~ div#control3{
+    display: block;
+}
 #slide3:checked ~ div.indicators label[for="slide3"] div.circle{
-    background-color: limegreen;
+    background-color: rgba(255, 255, 255, 1);
 }
 #slide4:checked ~ div.slider{
     transform: translateX(-60%);
 }
+#slide4:checked ~ div#control4{
+    display: block;
+}
 #slide4:checked ~ div.indicators label[for="slide4"] div.circle{
-    background-color: limegreen;
+    background-color: rgba(255, 255, 255, 1);
 }
 #slide5:checked ~ div.slider{
     transform: translateX(-80%);
 }
+#slide5:checked ~ div#control5{
+    display: block;
+}
 #slide5:checked ~ div.indicators label[for="slide5"] div.circle{
-    background-color: limegreen;
+    background-color: rgba(255, 255, 255, 1);
 }

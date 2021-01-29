@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="T10 Slider.css">
+</head>
+
+<body>
+    <!-- Slider using radio buttons and transform property -->
+    <div class="slider-container">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+        <div class="slider">
+            <div class="slides" id="sec1">
+                <div class="prev"> <label for="slide5"> <</label></div>
+                1
+                <div class="next"> <label for="slide2"> > </label> </div>
+            </div>
+            <div class="slides" id="sec2">
+                <div class="prev"> <label for="slide1"> < </label></div>
+                2
+                <div class="next"> <label for="slide3"> > </label> </div>
+            </div>
+            <div class="slides" id="sec3">
+                <div class="prev"> <label for="slide2"> < </label> </div>
+                3
+                <div class="next"> <label for="slide4"> > </label> </div>
+            </div>
+            <div class="slides" id="sec4">
+                <div class="prev"> <label for="slide3"> < </label></div>
+                4
+                <div class="next"> <label for="slide5"> > </label> </div>
+            </div>
+            <div class="slides" id="sec5">
+                <div class="prev"> <label for="slide4"> < </label></div>
+                5
+                <div class="next"> <label for="slide1"> > </label> </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <label for="slide1"> <div class="circle"> </div> </label>
+            <label for="slide2"> <div class="circle"> </div> </label>
+            <label for="slide3"> <div class="circle"> </div> </label>
+            <label for="slide4"> <div class="circle"> </div> </label>
+            <label for="slide5"> <div class="circle"> </div> </label>
+        </div> 
+    </div>
+
+    <!-- Slider using smooth scrolling property and a href tag -->
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slides" id="sec11">
+                <div class="prev"> <a href="#sec55"> < </a></div>
+                1
+                <div class="next"> <a href="#sec22"> > </a> </div>
+            </div>
+            <div class="slides" id="sec22">
+                <div class="prev"> <a href="#sec11"> < </a></div>
+                2
+                <div class="next"> <a href="#sec33"> > </a> </div>
+            </div>
+            <div class="slides" id="sec33">
+                <div class="prev"> <a href="#sec22"> < </a> </div>
+                3
+                <div class="next"> <a href="#sec44"> > </a> </div>
+            </div>
+            <div class="slides" id="sec44">
+                <div class="prev"> <a href="#sec33"> < </a></div>
+                4
+                <div class="next"> <a href="#sec55"> > </a> </div>
+            </div>
+            <div class="slides" id="sec55">
+                <div class="prev"> <a href="#sec44"> < </a></div>
+                5
+                <div class="next"> <a href="#sec11"> > </a> </div>
+            </div>           
+        </div>
+        <!-- <div class="indicators">
+            <a href="#sec11"> <div class="circle"> </div> </a>
+            <a href="#sec22"> <div class="circle"> </div> </a>
+            <a href="#sec33"> <div class="circle"> </div> </a>
+            <a href="#sec44"> <div class="circle"> </div> </a>
+            <a href="#sec55"> <div class="circle"> </div> </a>
+        </div> -->
+    </div>
+</body>
+
+</html>

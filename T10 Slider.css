@@ -75,6 +75,8 @@ div.controls{
     display: none;
     z-index: 9999;
     position: absolute;
+    color: white;
+    font-weight: bold; 
     left: 0;
     right: 0;
     bottom: 0;
@@ -91,7 +93,6 @@ div.controls{
     top: 0;
     bottom: 0;
     transition-property: none;
-    /* transition: all 0.8s cubic-bezier(0.79, 0.35, 0.24, 0.6) 2s; */
 }
 .prev{
     left: 0;

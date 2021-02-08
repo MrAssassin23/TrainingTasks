@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+}
+.slider-container{
+    width: 90%;
+    height: 300px;
+    margin: 100px auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}
+.slider-container::-webkit-scrollbar{
+    display: none;
+}
+div.slider{
+    width: 500%;    
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.79, 0.35, 0.24, 0.6);
+}
+button{
+    border: none;
+    outline: none;
+}
+div.indicators{
+    position: absolute;
+    z-index: 1111;
+    align-self: center;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+button.btn-indicator{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0px 3px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    cursor: pointer;
+}
+button.active{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+div.slides{
+    flex: 1;
+    width: 300px;
+    padding: 100px;
+    position: relative;
+    text-align: center;
+    font-size: 72px;
+    color: white;
+    font-weight: bold; 
+    display: inline-block;
+}
+div#sec1{
+    background-color: #264653;
+}
+div#sec2{
+    background-color: #2a9d8f;
+}
+div#sec3{
+    background-color: #e9c46a;
+}
+div#sec4{
+    background-color: #f4a261;
+}
+div#sec5{
+    background-color: #e76f51;
+}
+div.slides a{
+    text-decoration: none;
+    color: white;
+}
+div.controls{
+    /* display: none; */
+    z-index: 9999;
+    position: absolute;
+    color: white;
+    font-weight: bold; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+.btn-control{
+    color: white;
+    font-weight: bold; 
+}
+.prev ,.next{
+    position: absolute;
+    height: 100%;
+    width: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 82px;
+    text-align: center;
+    padding: 90px 0px;
+    top: 0;
+    bottom: 0;
+    transition-property: none;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;    
+}

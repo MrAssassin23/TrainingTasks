@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #606c38;
+  --btn-bg: #283618;
+  --font: #fefae0;
+}
+h3,
+h4,
+p {
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+div.game-container {
+  display: flex;
+  height: 100vh;
+  padding: 2rem;
+}
+div.player {
+  margin-right: 1rem;
+  flex: 0.5;
+  background-color: var(--bg-color);
+  text-align: center;
+  position: relative;
+}
+div.computer {
+  margin-left: 1rem;
+  text-align: center;
+  flex: 0.5;
+  position: relative;
+  background-color: var(--bg-color);
+}
+h3.user-name {
+  font-size: 3rem;
+  padding: 2rem;
+}
+h4.winner {
+  font-size: 3rem;
+  padding: 1rem;
+  display: none;
+}
+h4.choice {
+  font-size: 3.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+button,
+input#winning-score {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: var(--btn-bg);
+  border-radius: 1.75rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+button#new-game {
+  top: 25%;
+  left: 50%;
+}
+button#play-game {
+  top: 65%;
+  left: 50%;
+}
+input#winning-score {
+  top: 80%;
+  left: 50%;
+  text-align: center;
+}
+div.score {
+  background-color: white;
+  border-radius: 0.5rem;
+  display: inline-block;
+  padding: 0.3rem 1rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  left: 50%;
+  font-weight: bold;
+}
+p.score {
+  font-size: 3rem;
+}

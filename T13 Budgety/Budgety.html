@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgety</title>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="Budgety.css">
+    <script src="Budgety.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="budget-header">
+            <h3>Available Budget in February 2021</h3>
+            <h4 class="total">-0.00</h4>
+            <div class="income">
+                <h4>INCOME</h4>
+                <span class="right">
+                    <h4 class="income-value">+0.00</h4>
+                    <h4 class="income-per"></h4>
+                </span>
+            </div>
+            <div class="expense">
+                <h4>EXPENSES</h4>
+                <span class="right">
+                    <h4 class="expense-value">-0.00</h4>
+                    <h4 class="expense-per">--</h4>
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section class="budget">
+
+        <div class="add">
+            <select name="type" id="type">
+                <option value="income">+</option>
+                <option value="expense">-</option>
+            </select>
+            <input type="text" id="desc" placeholder="Enter Description..." name="desc">
+            <input type="number" id='amount' name="amount" placeholder="Value">
+            <button id="add_item"><i class="ion-ios-checkmark-outline"></i></button>
+        </div>
+
+        <div class="budget-log">
+            <div class="income-record">
+                <div class="income-title">Income</div>
+                <div class="logs" id="income-log">
+                    <!-- <div class="row income-row">
+                        <h4 class="income-desc">Epescdcd</h4>
+                        <div class="income-row-right">
+                            <h4 class="income-amount">+1000</h4>
+                            <button class="delete" id="income-delete"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="expense-record">
+                <div class="expense-title">Expenses</div>
+                <div class="logs" id="expense-log">
+                    <!-- <div class="row expense-row">
+                        <h4 class="expense-desc">Epescdcd</h4>
+                        <div class="expense-row-right">
+                            <h4 class="expense-amount">-1000</h4>
+                            <h4 class="expense-percentage">2%</h4>
+                            <button class="delete" id="expense-delete"><i class="ion-ios-close-outline"></i></button>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

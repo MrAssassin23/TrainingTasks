@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+    <link rel="stylesheet" href="HigherOrder.css">
+    <script src="HigherOrder.js" defer></script>
+</head>
+
+<body>
+    <h1>Array Data </h1>
+    <section id="data">
+        <h5>20</h5>
+        <h5>65</h5>
+        <h5>45</h5>
+        <h5>150</h5>
+        <h5>75</h5>
+        <h5>85</h5>
+        <h5>96</h5>
+        <h5>120</h5>
+    </section>
+    <h1>Array Foreach </h1>
+    <h3>Foreach takes each element of array and pass them as argument to callback functions. It does't return new array it alter the existing one. </h3>
+    <h3>Here adding 10 to each element using foreach</h3>
+    <section id="foreach"></section>
+
+    <h1>Array Map </h1>
+    <h3>Map function takes each element of array and pass them as argument to callback functions and perform operations on them and returns new array. </h3>
+    <h3>Here adding 10 to each element using Map function</h3>   
+    <section id="map"></section>
+
+    <h1>Array Filter </h1>
+    <h3>Filter function takes each element of array and only returns those elements in new array who satisfies the provided condition  </h3>
+    <h3>Here fitering elements which are grater than 50</h3> 
+    <section id="filter"></section>
+
+    <h1>Array Reduce </h1>
+    <h3>Reduce function takes each element and perform operations with the output of previous iteration and generates a single valued output. </h3>
+    <h3>Here addition of all elements</h3> 
+    <section id="reduce"></section>
+
+    <h1>Array Sort </h1>
+    <h3>Sort function sorts the values of array in descending order we can also pass the callback function to perform better sorting. It alters the original array values </h3>
+    <h3>Here sorting of all elements</h3> 
+    <section id="sort"></section>
+</body>
+
+</html>

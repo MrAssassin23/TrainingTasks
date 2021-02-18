@@ -88,14 +88,17 @@ section.img-preview{
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2.5rem 12rem;
     display: none;
+    z-index: 999;
 }
 #img-max{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* object-fit: contain; */
 }
 section.active{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 i#close{
     position: absolute;
@@ -103,4 +106,9 @@ i#close{
     padding: 0.5rem;
     font-size: 2rem;
     right: 10rem;
+    z-index: 1000;
+}
+.prev-img-container{
+    height: 100%;
+    width: 100%;
 }

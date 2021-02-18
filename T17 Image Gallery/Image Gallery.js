@@ -7,10 +7,13 @@ $(document).ready(function () {
         let img = new Image()
         img.src = url
         img.onload = () => {
-            if (imgMax.width() > imgMax.height()) {
-                imgMax.css({'width':'100%', 'height' : 'auto','max-height':'calc(100vh - 5rem)'})
-            } else if (imgMax.height() > imgMax.width()) {
-                imgMax.css({'height':'100%', 'width' : 'auto','max-width':'calc(100vw - 10rem)'})
+            console.log(img.naturalWidth , img.naturalHeight )
+            if (img.naturalWidth > img.naturalHeight) {
+                console.log('landcape')
+                imgMax.css({'max-height':'calc(100vh - 5rem)','max-width':'auto','width':'100%', 'height' : 'auto'})
+            } else if (img.naturalHeight > img.naturalWidth) {
+                console.log('portrait')
+                imgMax.css({'max-width':'calc(100vw - 10rem)','max-height':'auto','height':'100%', 'width' : 'auto'})
             }
         }
         $('.img-preview').addClass('active')
